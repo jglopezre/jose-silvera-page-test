@@ -9,13 +9,10 @@ $color-4: gray;
     
 header {
     font-size: 0.8rem;
-    //display: flex;
-    //align-items: center;
-    //justify-content: space-around;
     color: $color-1;
     background-color: #091128;
     width: 100%;
-    //height: 120px;
+    opacity: 0.9;
     > div {
         height: 100%;
         padding: {
@@ -30,17 +27,17 @@ header {
         color: $color-2;
         font-weight: 700;
     }
-}
-
-a {
-    text-decoration: none;
-}
-.mini-social-bar {
-    > div {
-        padding-right: 10px;
+    i {
+        font-size: 1rem;
+        margin-right: 1rem;
+        
     }
-    display: flex;
-    direction: row;
+    a {
+        color: $color-1;
+        &:hover {
+            color: $color-2;
+        }
+    }
 }
 
 .navigation-bar {
@@ -87,9 +84,158 @@ a {
         
     }
 }
+.testimonial-container {
+    /* width: 100%;
+    height: 100vh; */
+    background: $color-1;
+    /* padding:{
+        left: 
+    } */
+    .follow-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        > div:nth-child(1){
+            
+            h1 {
+                font-size: 2.8rem;
+                font-weight: bolder;
+                color: $color-3;
+            }
+            p {
+                color:$color-2;
+                font-variant-caps: all-petite-caps;
+                font-weight: bold;
+                font-size: 1.3rem;
+                font-stretch: extra-expanded;
+            }
+        }
+        > div:nth-child(2){
+            font-size: 3rem;
+            a {
+                color: $color-3;
+                margin: 1rem;
+            }
+        }
+        
+    }
+    .suscribe-box {
+        background-color: $color-2;
+        color: $color-1;
+        font-size: 1.6rem;
+        font-weight: bold;
+        border-radius: 5px;
+        text-align: center;
+        margin: {
+            top: 2rem;
+            bottom: 3rem;
+        }
+    }
+}
+
+.footer-container {
+    background-color: $color-3;
+    color: $color-1;
+    padding: {
+        top: 1.5rem;
+        bottom: 1.5rem;
+    }
+    
+    span {
+        color: $color-2;
+        font-weight: 700;
+    }
+    a {
+        text-decoration: none;
+    }
+    .footer-top {
+        text-align: left;
+        position: relative;
+        //z-index: -10;
+        padding: {
+            top: 2rem;
+            bottom: 2rem;
+        };
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: $color-1;
+            opacity: 0.03;
+            top: -1.5rem;
+            left: 0;
+            z-index: 1;
+        }
+        .footer-col {
+            z-index: 2;
+        }
+        .footer-title {
+            position: relative;
+            margin-bottom: 30px;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                background-color: $color-2;
+                width: 50px;
+                height: 3px;
+                left: 0;
+                bottom: -10px;
+            }
+            h1 {
+                color: $color-2;
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+        }
+        .button-social-media {
+            margin-bottom: 1rem;
+        }
+        a {
+            color: $color-1;
+            &:hover {
+                color: $color-2;
+            }
+        }
+        button {
+            background: none;
+            border: solid 1px $color-1;
+            color: $color-1;
+            width: 40px;
+            height: 40px;
+            &:hover {
+                color: $color-2;
+                border-color: $color-2;
+            }
+        }
+        
+    }
+    .footer-bottom {
+        text-align: center;
+        font-size: 0.8rem;
+        line-height: 0.8rem;   
+    }
+}
+
+#header-container {
+    position: relative;
+    height: 100vh;
+}
 
 #hero-video{
     background-color: slateblue;
+    //position: relative;
+    > div {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        bottom: 0;
+
+    }
     > video {
         position: absolute;
         left: 0px;
@@ -108,6 +254,23 @@ a {
         width: 100%;
         height: 100%;
         background-color: rgba(40, 40, 60, 0.7);
-        z-index: -5;
+        z-index: -9;
+    }
+}
+
+#reservation-form{
+    background-color: $color-1;
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: center;
+    padding: 2rem;
+    form {
+        width: 100%;
+        margin: {
+            top: 1rem;
+            left: 2rem;
+            right: 2rem;
+        }
     }
 }
