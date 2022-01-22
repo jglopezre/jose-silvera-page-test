@@ -2,7 +2,8 @@ $color-1: #fff;
 $color-2: #fe5d26;
 $color-3: #0b132b;
 $color-4: gray;
-
+$color-6: #1e263b;
+$color-7: #ececec;
 
 
 
@@ -84,6 +85,225 @@ header {
         
     }
 }
+.why-container {
+    padding: {
+        top: 4rem;
+        bottom: 4rem;
+    }
+    > div {
+        > div:nth-child(1) {
+            > img {
+                max-width: 500px;
+            }
+        }
+        > div:nth-child(2) {
+            
+        }
+    }
+}
+
+.about-container {
+    padding: {
+        top: 4rem;
+        bottom: 4rem;
+    }
+    p {
+        font-variant-caps: all-petite-caps;
+        font-weight: bold;
+        font-size: 1.3rem;
+        font-stretch: extra-expanded;
+    }
+    h1 {
+        font-size: 2.8rem;
+        font-weight: bolder;
+        color: $color-3;
+    }
+    h2 {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    .about-us-box {
+        min-height: 100%;
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: sstart;
+        > div:nth-child(1) {
+            p {
+                color:$color-2;
+            }
+            h2 {
+                margin-top: 2rem;
+            }
+        }
+        > div:nth-child(2) {
+            margin-top: 4rem;
+            button {
+                background-color: $color-1;
+                color: $color-3;
+                border: solid 1px $color-7;
+                border-radius: 5px;
+                margin-right: 0.5rem;
+                width: 30%;
+                font-weight: bold;
+                padding: {
+                    top: 0.5rem;
+                    bottom: 0.5rem
+                }
+                &:hover {
+                    background-color: $color-2;
+                    color: $color-1;
+                }
+                &:active {
+                    background-color: $color-6;
+                    color: $color-1; 
+                }
+            }
+        }
+        > div:nth-child(3) {
+            border: solid 1px $color-7;
+            border-radius: 5px;
+            margin:{
+                top: 1rem;
+                bottom: 1rem;
+            }
+            padding: 2rem;
+            p {
+                font-variant: normal;
+                font-weight: normal;
+            }
+        }
+        > div:nth-child(4) {
+            display: flex;
+            justify-content: center;
+            margin: {
+                top: 4rem;
+                bottom: 4rem;
+            };
+            button {
+                background-color: $color-6;
+                color: $color-1;
+                border: none;
+                border-radius: 5px;
+                font-weight: bold;
+                padding: {
+                    top: 0.5rem;
+                    bottom: 0.5rem;
+                    left: 2rem;
+                    right: 2rem;
+                };
+                &:hover {
+                    background-color: $color-2;
+                }
+            }
+        }
+    }
+    .services-box {
+        max-width: 700px;
+        >div:nth-child(1) {
+            p {
+                color: $color-2;
+            }
+        }
+        > div:nth-child(2) {
+            color: $color-1;
+            margin: {
+                top: 2rem;
+                bottom: 2rem;
+            }
+            p {
+                font-variant: normal;
+                font-weight: normal;
+            }
+            > div {
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                padding: {
+                    top: 2rem;
+                    bottom: 2rem;
+                    left: 1rem;
+                    right: 2rem;
+                };
+                
+                p {
+                    font-size: 1.1rem;
+                }
+                > div {
+                    padding-left: 1rem;
+                }
+            }
+            > div:nth-child(1) {
+                background-color:$color-7;
+                color: $color-3;
+            }
+            >div:nth-child(2) {
+                background-color: $color-2;
+            }
+            >div:nth-child(3) {
+                background-color: $color-3;
+            }
+        }
+    }
+}
+.gallery-container {
+    background-color: $color-6;
+    padding: {
+        top: 4rem;
+        bottom: 4rem;
+    };
+    > div {
+        margin: {
+            top: 2rem;
+            bottom: 2rem;
+        }
+    }
+    > div:nth-child(1) {
+        p {
+            color:$color-2;
+            font-variant-caps: all-petite-caps;
+            font-weight: bold;
+            font-size: 1.3rem;
+            font-stretch: extra-expanded;
+        }
+        h1 {
+                
+            font-size: 2.8rem;
+            font-weight: bolder;
+            color: $color-1;
+        }
+    }
+    > div:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        img {
+            width: 18%;
+        }
+    }
+    > div:nth-child(3) {
+        
+        button {
+            background-color: $color-3;
+            color: $color-1;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            padding: {
+                top: 0.5rem;
+                bottom: 0.5rem;
+                left: 2rem;
+                right: 2rem;
+            }
+            &:hover {
+                background-color: $color-2;
+            }
+        }
+    }
+}
+
 .testimonial-container {
     /* width: 100%;
     height: 100vh; */
@@ -91,13 +311,30 @@ header {
     /* padding:{
         left: 
     } */
+    .testimonial-box {
+        background-color: teal;
+        height: 100vh;
+    }
     .follow-box {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        flex-wrap: wrap;
+        padding: {
+            top: 3rem;
+            bottom: 3rem;
+        }
+        > div {
+            flex-grow: 1;
+            max-width: 400px;
+            margin: {
+                top: 1rem;
+                bottom: 1rem;
+            };
+        }
         > div:nth-child(1){
-            
             h1 {
+                
                 font-size: 2.8rem;
                 font-weight: bolder;
                 color: $color-3;
@@ -114,21 +351,62 @@ header {
             font-size: 3rem;
             a {
                 color: $color-3;
-                margin: 1rem;
+                margin: 0.5rem;
+                &:hover {
+                    color: $color-2;
+                }
             }
         }
         
     }
     .suscribe-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
         background-color: $color-2;
-        color: $color-1;
-        font-size: 1.6rem;
-        font-weight: bold;
+        min-height: 120px;
         border-radius: 5px;
         text-align: center;
         margin: {
             top: 2rem;
             bottom: 3rem;
+        }
+        > div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 350px;
+            //height: 100%;
+            padding: {
+                left: 1.5rem;
+                right: 1.5rem;
+            }
+        }
+        > div:nth-child(1) {
+            color: $color-1;
+            font-size: 1.6rem;
+            font-weight: bold;            
+        }
+        > div:nth-child(2) {
+            > input {
+                border-style: none;
+                height: 3rem;
+                &:nth-child(1) {
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+                &:nth-child(2) {
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    background-color: #fbad02;
+                    color: $color-1;
+                    padding: {
+                        left: 1rem;
+                        right: 1rem;
+                    };
+                }
+            }
         }
     }
 }
@@ -226,7 +504,7 @@ header {
 
 #hero-video{
     background-color: slateblue;
-    //position: relative;
+       //position: relative;
     > div {
         position: absolute;
         display: flex;
