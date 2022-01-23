@@ -6,19 +6,15 @@ $color-6: #1e263b;
 $color-7: #ececec;
 
 
-
-    
-
-
 #header-container {
     position: relative;
-    //height: 100vh;
+    overflow: hidden;
     header {
         font-size: 0.8rem;
         color: $color-1;
         background-color: #091128;
         width: 100%;
-        opacity: 0.9;
+        opacity: 0.95;
         > div {
             height: 100%;
             padding: {
@@ -86,24 +82,29 @@ $color-7: #ececec;
                     background-color: $color-4;
                 }
             }
-            
         }
     }
     > div:nth-child(3) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         position: relative;
+        height: 100%;
         padding: {
-            top: 3rem;
-            //bottom: 3rem;
+            top: 4rem;
+            bottom: 4rem;
         }
         >div:nth-child(1) {
             display: flex;
             flex-direction: column;
             align-items: left;
             max-width: 500px;
-            padding-top: 2.5rem;
+            padding: {
+                top: 2.5rem;
+                left: 1.5rem;
+                right: 1.5rem;
+            }
             > div {
                 margin-bottom: 3rem;
             }
@@ -183,25 +184,18 @@ $color-7: #ececec;
             opacity: 0.7;
             width: 100%;
             height: 100%;
-            top: 0;
+            bottom: 0;
             left: 0;
             z-index: -5;
         }
     }
     > div:nth-child(4) {
         position: absolute;
-        top: 0;
-        left: 0;
+        bottom: -10px;
+        right: 0;
         z-index: -10;
-        > video {
-            width: 100%;
-            height: auto;
-        }
-
     }
 }
-
-
 
 #why-container {
     padding: {
@@ -262,7 +256,6 @@ $color-7: #ececec;
                         border-radius: 5px;
                     }
                 }
-
             }
         }
     }
@@ -310,7 +303,8 @@ $color-7: #ececec;
                 border: solid 1px $color-7;
                 border-radius: 5px;
                 margin-right: 0.5rem;
-                width: 30%;
+                max-width: 30%;
+                min-width: 140px;
                 font-weight: bold;
                 padding: {
                     top: 0.5rem;
@@ -329,7 +323,7 @@ $color-7: #ececec;
         > div:nth-child(3) {
             border: solid 1px $color-7;
             border-radius: 5px;
-            margin:{
+            margin: {
                 top: 1rem;
                 bottom: 1rem;
             }
@@ -392,7 +386,6 @@ $color-7: #ececec;
                     left: 1rem;
                     right: 2rem;
                 };
-                
                 p {
                     font-size: 1.1rem;
                 }
@@ -435,7 +428,6 @@ $color-7: #ececec;
             font-stretch: extra-expanded;
         }
         h1 {
-                
             font-size: 2.8rem;
             font-weight: bolder;
             color: $color-1;
@@ -451,7 +443,6 @@ $color-7: #ececec;
         }
     }
     > div:nth-child(3) {
-        
         button {
             background-color: $color-3;
             color: $color-1;
@@ -472,10 +463,77 @@ $color-7: #ececec;
 }
 
 #testimonial-container {
-    background: $color-1;
     .testimonial-box {
-        background-color: teal;
-        height: 100vh;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+        margin: {
+            top: 3rem;
+            bottom: 3rem;
+        }
+        >div:nth-child(1) {
+            width: 340px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: $color-1;
+            font-variant-caps: all-small-caps;
+            line-height: 2.3rem;
+            margin: {
+                top: 3rem;
+                bottom: 3rem;
+            }
+            padding: {
+                top: 3rem;
+                bottom: 3rem;
+                left: 1.5rem;
+                right: 1.5rem;
+            }
+            h1 {
+                font-size: 0.9rem;
+            }
+            p{
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+        }
+        > div:nth-child(2) {
+            > div {
+                width: 360px;
+            }
+            margin: {
+                top: 3rem;
+                bottom: 3rem;
+            };
+        }
+        > div:nth-child(3) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -10;
+            img {
+                width: 100%;   
+            };
+        }
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            background-color: $color-6;
+            opacity: 0.9;
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            left: 0;
+            z-index: -5;
+        }
     }
     .follow-box {
         display: flex;
@@ -578,7 +636,6 @@ $color-7: #ececec;
         top: 1.5rem;
         bottom: 1.5rem;
     }
-    
     span {
         color: $color-2;
         font-weight: 700;
@@ -647,7 +704,6 @@ $color-7: #ececec;
                 border-color: $color-2;
             }
         }
-        
     }
     .footer-bottom {
         text-align: center;
@@ -657,39 +713,19 @@ $color-7: #ececec;
 }
 
 
-
-
-#hero-video{
-    background-color: slateblue;
-    > div {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        top: 0;
-        bottom: 0;
-
+@media screen and (max-width: 900px) {
+    #header-container {
+        > div:nth-child(4) {
+            display: none;
+        }
     }
-    > video {
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        width: 100%;
-        height: auto;
-        z-index: -10;
-        visibility: visible;
+
+    #testimonial-container {
+        .testimonial-box {
+            >div:nth-child(3) {
+                display: none;
+            }
+        }
     }
-    &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(40, 40, 60, 0.7);
-        z-index: -9;
-    }
+
 }
-
-
