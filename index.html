@@ -9,8 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <section id="header-container">
+
+    <section id="header-container" >
         <header class="container-fluid">
             <div class="row align-items-center justify-content-evenly">
                 <div class="col-md-2 offset-1">
@@ -48,7 +50,31 @@
             <button id="contactus-button">CONTACT US</button>
         </div>
 
-        <div id="hero-video">
+        <div>
+            <div>
+                <div>
+                    <h1>We Create the desired Home for you</h1>
+                </div>
+                <div>
+                    <p>Contact us to find out your ideas and build them together</p>
+                </div>
+            </div>
+            <div>
+                <h1>Make a Reservation</h1>
+                <form action="">
+                    <input type="text" placeholder="Name"><br>
+                    <input type="email" placeholder="Email" name="" id="">
+                    <input type="number" placeholder="Telephone" name="" id=""><br>
+                    <input type="date" placeholder="mm/dd/yyyy" name="" id=""><br>
+                    <input type="text" placeholder="Mensaje" name="" id=""><br>
+                    <input type="submit" value="SEND" >
+                </form>
+            </div>
+        </div>
+        <div>
+            <video src="/video/hero-background.mp4" autoplay loop width="auto"></video>
+        </div>
+        <!-- <div class="hero-video">
             <video src="/video/hero-background.mp4" autoplay loop width="auto"></video>
             <div>
                 <div>
@@ -71,32 +97,32 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
-    <section class="why-container container-fluid">
+    <section id="why-container" class="container-fluid">
         <div class="row">
             <div class="col-lg-5 offset-lg-1">
                 <img src="/img/about.webp" alt="A worker">
             </div>
-            <div class="col-lg-5 offset-lg-1">
+            <div class="col-lg-4 offset-lg-1">
                 <div>
                     <p>welcome to construction company</p>
-                    <h1>Why Wwork whith us?</h1>
-                    <p>We are a company with higly qualified and responsible personel who will perform the best jobs for your home.</p>
+                    <h1>Why work whith us?</h1>
+                    <p>We are a company with higly qualified and responsible personnel who will perform the best jobs for your home.</p>
                 </div>
                 <div>
-                    <div>
+                    <div class="work-thumbnail">
                         <div>Quality Construction</div>
                         <div><img src="/img/work-4.webp" alt=""></div>
                     </div>
-                    <div>
+                    <div class="work-thumbnail">
                         <div>Professional Liability</div>
                         <div><img src="/img/work-5.webp" alt=""></div>
                     </div>
-                    <div>
+                    <div class="work-thumbnail">
                         <div>Dedicated To Clients</div>
-                        <div><img src="/img/work-7.webpx    " alt=""></div>
+                        <div><img src="/img/work-7.webp" alt=""></div>
                     </div>
                 </div>
 
@@ -104,7 +130,7 @@
         </div>
     </section>
 
-    <section class="about-container container-fluid">
+    <section id="about-container" class="container-fluid">
         <div class="row justify-content-arround">
             <div class="about-us-box col-lg-5 offset-md-1">
                 <div>
@@ -156,7 +182,7 @@
         </div>
     </section>
 
-    <section class="gallery-container container-fluid">
+    <section id="gallery-container" class="container-fluid">
         <div class="row">
             <div class="col-md-5 offset-md-1">
                 <p>Our Projects</p>
@@ -179,7 +205,7 @@
         </div>
     </section>
 
-    <section class="testimonial-container container-fluid">
+    <section id="testimonial-container" class="container-fluid">
         <div class="row">
             <div class="testimonial-box col-md-10 offset-md-1">
 
@@ -211,7 +237,7 @@
         </div>
     </section>
 
-    <footer class="footer-container container-fluid">
+    <footer id="footer-container" class="container-fluid">
         <div class="footer-top row justify-content-start">
             <div class="footer-col col-md-3 offset-md-1">
                 <div class="footer-title">
