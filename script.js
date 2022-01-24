@@ -7,4 +7,6 @@ let mission = document.getElementById('mission').addEventListener('click', () =>
 let vision = document.getElementById('vision').addEventListener('click', () => description.innerHTML = `<p>${VISION}</p>`);
 let value = document.getElementById('value').addEventListener('click', () => description.innerHTML = `<p>${VALUE}</p>`);
 
+let contactUsButton = document.getElementById('contactUsButton').addEventListener('click', () => document.getElementById('contact-form').scrollIntoView(true));
+
 description.innerHTML = `<p>${MISSION}</p>`;

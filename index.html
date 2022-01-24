@@ -43,11 +43,11 @@
         </header>
 
         <div>
-            <button id="homeButton-button">HOME</button>
-            <button id="aboutus-button">ABOUT US</button>
-            <button id="services-button">SERVICES</button>
-            <button id="gallery-button">GALLERY</button>
-            <button id="contactus-button">CONTACT US</button>
+            <div><a href="#header-container">HOME</a></div>
+            <div><a href="#about-box">ABOUT US</a></div>
+            <div><a href="#services">SERVICES</a></div>
+            <div><a href="#gallery-container">GALLERY</a></div>
+            <div><a href="#contact-form">CONTACT US</a></div>
         </div>
 
         <div>
@@ -59,9 +59,9 @@
                     <p>Contact us to find out your ideas and build them together</p>
                 </div>
             </div>
-            <div>
+            <div id="contact-form">
                 <h1>Make a Reservation</h1>
-                <form action="">
+                <form>
                     <input type="text" placeholder="Name"><br>
                     <input type="email" placeholder="Email" name="" id="">
                     <input type="number" placeholder="Telephone" name="" id=""><br>
@@ -80,6 +80,9 @@
         <div class="row">
             <div class="col-lg-5 offset-lg-1">
                 <img src="/img/about.webp" alt="A worker">
+                <div>
+                    <i class="fas fa-hammer"></i>
+                </div>
             </div>
             <div class="col-lg-4 offset-lg-1">
                 <div>
@@ -108,7 +111,7 @@
 
     <section id="about-container" class="container-fluid">
         <div class="row justify-content-arround">
-            <div class="about-us-box col-lg-5 offset-md-1">
+            <div id="about-box" class="about-us-box col-lg-5 offset-md-1">
                 <div>
                     <p>about us</p>
                     <h1>Best Provider for Industrial Services</h1>
@@ -123,10 +126,10 @@
                     <!--Text generated from JS-->
                 </div>
                 <div>
-                    <button>CONTACT US!</button>
+                    <button id="contactUsButton">CONTACT US!</button>
                 </div>
             </div>
-            <div class="services-box col-lg-3 offset-md-1">
+            <div id="services" class="services-box col-lg-3 offset-md-1">
                 <div>
                     <p>services</p>
                     <h1>know whats we offer you</h1>
@@ -300,10 +303,10 @@
                 <div class="footer-title">
                     <h1>Useful Pages</h1>
                 </div>
-                <p><a href="#"><i class="fas fa-angle-right"></i> About Us</a></p>
-                <p></p><a href="#"><i class="fas fa-angle-right"></i> Services</a></p>
-                <p></p><a href="#"><i class="fas fa-angle-right"></i> Gallery</a></p>
-                <p></p><a href="#"><i class="fas fa-angle-right"></i> Contact Us</a></p>
+                <p><a href="#about-box"><i class="fas fa-angle-right"></i> About Us</a></p>
+                <p></p><a href="#services"><i class="fas fa-angle-right"></i> Services</a></p>
+                <p></p><a href="#gallery-container"><i class="fas fa-angle-right"></i> Gallery</a></p>
+                <p></p><a href="#contact-form"><i class="fas fa-angle-right"></i> Contact Us</a></p>
             </div>
 
         </div>
