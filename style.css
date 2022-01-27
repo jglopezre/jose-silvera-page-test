@@ -165,6 +165,9 @@
 #header-container > div:nth-child(3) > div:nth-child(2) form > input:nth-child(10):hover {
   background-color: #fe5d26;
 }
+#header-container > div:nth-child(3) > div:nth-child(2) form ::placeholder {
+  color: gray;
+}
 #header-container > div:nth-child(3)::before {
   content: "";
   display: block;
